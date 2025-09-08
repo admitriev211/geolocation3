@@ -39,7 +39,7 @@ def show_heatmap(map_type = 'placemark'):
 
     potencial = sorted(rows, key=lambda x: x['potencial'], reverse=True)
 
-    return render_template('heatmap.html', potencial=potencial, map_type=map_type, success=True)
+    return render_template('heatmap.html', potencial=potencial[:2000], map_type=map_type, success=True)
 
 
 # Press the green button in the gutter to run the script.
